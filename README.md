@@ -2,7 +2,7 @@
 
 Work in Progress ...
 
-##Overview
+## Overview
 The project generates a self executing fat jar withh all the dependencies bundled in it. When you execute, it will 
  * Start Tomcat server (in embedded mode) 
  * Setup jersey 2 (REST API support, include CORS support)
@@ -10,10 +10,10 @@ The project generates a self executing fat jar withh all the dependencies bundle
  * Generates Open API spec for the APIs it is exposing (Swagger)
 
 
-###Build
+### Build
 ```mvn clean install```
 
-###Execute
+### Execute
 ``` java -jar ./target//app-jar-with-dependencies.jar ``` It should Start the server and create a log folder
 
 
