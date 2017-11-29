@@ -2,6 +2,14 @@
 
 Work in Progress ...
 
+##Overview
+The project generates a self executing fat jar withh all the dependencies bundled in it. When you execute, it will 
+ * Start Tomcat server (in embedded mode) 
+ * Setup jersey 2 (REST API support, include CORS support)
+ * Setup logging for the project (log4j2)
+ * Generates Open API spec for the APIs it is exposing (Swagger)
+
+
 ###Build
 ```mvn clean install```
 
