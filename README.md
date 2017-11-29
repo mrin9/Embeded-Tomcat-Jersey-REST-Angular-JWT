@@ -1,0 +1,3 @@
+# Embeded-Tomcat-Jersey-REST-Angular-JWT
+
+Work in Progress ...
