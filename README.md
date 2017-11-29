@@ -14,7 +14,7 @@ The project generates a self executing fat jar withh all the dependencies bundle
 ```mvn clean install```
 
 ### Execute
-``` java -jar ./target//app-jar-with-dependencies.jar ``` It should Start the server and create a log folder
+``` java -jar ./target/app-jar-with-dependencies.jar ``` It should start the server at port 8080 and create a log folder
 
 
 ### Some Initial endpoints
