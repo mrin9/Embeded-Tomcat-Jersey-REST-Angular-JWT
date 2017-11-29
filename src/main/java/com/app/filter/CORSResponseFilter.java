@@ -12,7 +12,6 @@ import javax.ws.rs.core.MultivaluedMap;
 public class CORSResponseFilter  implements ContainerResponseFilter {
     @Override
     public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext) throws IOException {
-        System.out.print("Inside Filter");
         MultivaluedMap<String, Object> respHeaderMap = responseContext.getHeaders();
         String reqHeaderString = requestContext.getHeaderString("Access-Control-Request-Headers");
 

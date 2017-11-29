@@ -10,6 +10,7 @@
         <tomcat.version>8.5.2</tomcat.version> <!-- Embeded Tomcat 9 has some issues -->
         <jersey-version>2.26</jersey-version>
         <swagger-version>1.5.17</swagger-version>
+        <jackson-version>2.9.2</jackson-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -31,7 +32,6 @@
             <artifactId>tomcat-embed-logging-juli</artifactId>
             <version>${tomcat.version}</version>
         </dependency>
-        
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
@@ -62,14 +62,13 @@
             <version>${jersey-version}</version>
         </dependency>
         <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-jackson</artifactId>
-            <version>${jersey-version}</version>
-        </dependency>
-        
-        <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
             <artifactId>jersey-common</artifactId>
+            <version>${jersey-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-jackson</artifactId>
             <version>${jersey-version}</version>
         </dependency>
         <dependency>
@@ -83,13 +82,21 @@
             <version>${jersey-version}</version>
         </dependency>
 
+        <!-- Jackson -->
+        <dependency>
+          <groupId>com.fasterxml.jackson.jaxrs</groupId>
+          <artifactId>jackson-jaxrs-json-provider</artifactId>
+          <version>${jackson-version}</version>
+        </dependency>
+        
         <!-- JWT -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.7.0</version>
         </dependency>
-		
+	
+                	
         <!-- Swagger -->
         <dependency>
             <groupId>io.swagger</groupId>

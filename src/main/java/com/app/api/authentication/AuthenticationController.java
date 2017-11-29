@@ -39,8 +39,13 @@ public class AuthenticationController extends BaseController{
     
     @GET
     @Path("/message")
-    public String getMsg()
-    {
-         return "Hello World !! - Jersey 2";
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response getMsg() {
+        LoginOutputModel loginOutput = new LoginOutputModel("name", "name@email.com","ADMIN", "XXX.XXX.XXX");
+        //BaseResponse resp = new BaseResponse();
+        //resp.setSuccesMessage("This is Fine");
+        return Response.ok(new LoginResponse(loginOutput)).build();
+        //return "Hello World !! - Jersey 2";
     }
 }

@@ -3,9 +3,9 @@
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
-         metadata-complete="true"
+         metadata-complete="false"
          version="3.1">
-    
+
     <servlet>
         <servlet-name>MainApp</servlet-name>
         <servlet-class>
@@ -21,8 +21,17 @@
         <servlet-name>MainApp</servlet-name>
         <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
+  
+        
+    <servlet>
+        <servlet-name>SwaggerConfigServlet</servlet-name>
+        <servlet-class>com.app.config.SwaggerConfigServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>         
     
-    
+                          
+                                                
+                                                                                            
     <!-- START - The Welcome File List -->
     <welcome-file-list>
         <welcome-file>/index.jsp </welcome-file>
