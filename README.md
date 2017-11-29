@@ -2,6 +2,13 @@
 
 Work in Progress ...
 
+###Build
+```mvn clean install```
+
+###Execute
+``` java -jar ./target//app-jar-with-dependencies.jar ``` It should Start the server and create a log folder
+
+
 ### Some Initial endpoints
 Cpmponent           | URL                                      
 ---                 | ---                                      

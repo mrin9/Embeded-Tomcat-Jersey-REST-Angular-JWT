@@ -5,7 +5,14 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
          metadata-complete="false"
          version="3.1">
-
+    
+    <!-- Context Params -->
+    <context-param>
+        <param-name>isLog4jAutoInitializationDisabled</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    
+    <!-- Servlet Declerations -->
     <servlet>
         <servlet-name>MainApp</servlet-name>
         <servlet-class>
