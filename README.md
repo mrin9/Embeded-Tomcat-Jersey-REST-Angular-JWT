@@ -1,6 +1,5 @@
 # Embeded-Tomcat-Jersey-REST-Angular-JWT
 
-Work in Progress ...
 
 ## Overview
 The project generates a self executing fat jar withh all the dependencies bundled in it. When you execute, it will 
